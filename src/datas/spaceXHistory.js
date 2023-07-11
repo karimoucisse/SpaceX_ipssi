@@ -9,8 +9,9 @@ export const getHistories = async () => {
 
 export const getHistory = async (id) => {
   try {
-    return (await axios.get(`https://api.spacexdata.com/v4/history/${id}`)).data;
+    return (await axios.get(`https://api.spacexdata.com/v4/history/${id}`))
+      .data;
   } catch (error) {
     console.error(error);
   }
-}
+};

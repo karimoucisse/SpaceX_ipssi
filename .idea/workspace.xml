@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f047d0a1-89a3-4840-be21-75e394e7eeef" name="Changes" comment="add new File For list people">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Crew/People.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Crew/People.jsx" afterDir="false" />
+    <list default="true" id="f047d0a1-89a3-4840-be21-75e394e7eeef" name="Changes" comment="Merge">
+      <change afterPath="$PROJECT_DIR$/src/datas/spaceXRocket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Rocket/Rocket.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Rocket/Rocket.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1689081056092</updated>
       <workItem from="1689081061720" duration="2846000" />
-      <workItem from="1689083986948" duration="913000" />
+      <workItem from="1689083986948" duration="2979000" />
     </task>
     <task id="LOCAL-00001" summary="add new File For list people">
       <option name="closed" value="true" />
@@ -82,7 +83,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689082891447</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Merge">
+      <option name="closed" value="true" />
+      <created>1689085095711</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1689085095711</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +110,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add new File For list people" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new File For list people" />
+    <MESSAGE value="Merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge" />
   </component>
 </project>

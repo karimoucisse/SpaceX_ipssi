@@ -1,0 +1,16 @@
+Index: package.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n  \"name\": \"spacecipssi\",\r\n  \"version\": \"0.1.0\",\r\n  \"private\": true,\r\n  \"dependencies\": {\r\n    \"@emotion/react\": \"^11.11.1\",\r\n    \"@emotion/styled\": \"^11.11.0\",\r\n    \"@mui/icons-material\": \"^5.13.7\",\r\n    \"@mui/material\": \"^5.13.7\",\r\n    \"@testing-library/jest-dom\": \"^5.16.5\",\r\n    \"@testing-library/react\": \"^13.4.0\",\r\n    \"@testing-library/user-event\": \"^13.5.0\",\r\n    \"react\": \"^18.2.0\",\r\n    \"react-dom\": \"^18.2.0\",\r\n    \"react-scripts\": \"5.0.1\",\r\n    \"web-vitals\": \"^2.1.4\"\r\n  },\r\n  \"scripts\": {\r\n    \"start\": \"react-scripts start\",\r\n    \"build\": \"react-scripts build\",\r\n    \"test\": \"react-scripts test\",\r\n    \"eject\": \"react-scripts eject\",\r\n    \"eslint\": \"eslint ./src/**/*.{js,jsx,ts,tsx} --fix\",\r\n    \"format\": \"prettier --write . --config ./.prettierrc\",\r\n    \"pre-commit\": \"eslint ./src/**/*.{js,jsx} --fix && prettier --write . --config ./.prettierrc\",\r\n    \"prepare\": \"husky install\"\r\n  },\r\n  \"eslintConfig\": {\r\n    \"extends\": [\r\n      \"react-app\",\r\n      \"react-app/jest\"\r\n    ]\r\n  },\r\n  \"browserslist\": {\r\n    \"production\": [\r\n      \">0.2%\",\r\n      \"not dead\",\r\n      \"not op_mini all\"\r\n    ],\r\n    \"development\": [\r\n      \"last 1 chrome version\",\r\n      \"last 1 firefox version\",\r\n      \"last 1 safari version\"\r\n    ]\r\n  },\r\n  \"devDependencies\": {\r\n    \"eslint\": \"^8.44.0\",\r\n    \"husky\": \"^8.0.0\",\r\n    \"prettier\": \"^3.0.0\"\r\n  }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/package.json b/package.json
+--- a/package.json	(revision 29f466c1ebbdacc8d162ecdfbef466bc59882a5c)
++++ b/package.json	(date 1689081467458)
+@@ -1,4 +1,4 @@
+-{
++ {
+   "name": "spacecipssi",
+   "version": "0.1.0",
+   "private": true,

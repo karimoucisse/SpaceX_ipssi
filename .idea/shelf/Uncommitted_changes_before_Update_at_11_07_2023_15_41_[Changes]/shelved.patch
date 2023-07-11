@@ -1,0 +1,54 @@
+Index: src/components/Crew/People.jsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from 'react';\r\n\r\nconst People = ({people}) => {\r\n\r\n    return (\r\n        <div>\r\n            <h2>{people.name}</h2>\r\n            <img src={people.image} alt={people.name}/>\r\n            <h3>{people.agency}</h3>\r\n            <a href={people.wikipedia}>Wiki</a>\r\n        </div>\r\n    );\r\n}\r\n\r\nexport default People
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Crew/People.jsx b/src/components/Crew/People.jsx
+--- a/src/components/Crew/People.jsx	(revision d6d4ae38c7c7e75242c43724b3be64a0b5b5c7ac)
++++ b/src/components/Crew/People.jsx	(date 1689082869926)
+@@ -1,15 +1,14 @@
+ import React from 'react';
+ 
+-const People = ({people}) => {
+-
+-    return (
+-        <div>
+-            <h2>{people.name}</h2>
+-            <img src={people.image} alt={people.name}/>
+-            <h3>{people.agency}</h3>
+-            <a href={people.wikipedia}>Wiki</a>
+-        </div>
+-    );
+-}
++const People = ({ people }) => {
++  return (
++    <div>
++      <h2>{people.name}</h2>
++      <img src={people.image} alt={people.name} />
++      <h3>{people.agency}</h3>
++      <a href={people.wikipedia}>Wiki</a>
++    </div>
++  );
++};
+ 
+-export default People
+\ No newline at end of file
++export default People;
+Index: package.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n  \"name\": \"spacecipssi\",\r\n  \"version\": \"0.1.0\",\r\n  \"private\": true,\r\n  \"dependencies\": {\r\n    \"@emotion/react\": \"^11.11.1\",\r\n    \"@emotion/styled\": \"^11.11.0\",\r\n    \"@mui/icons-material\": \"^5.13.7\",\r\n    \"@mui/material\": \"^5.13.7\",\r\n    \"@testing-library/jest-dom\": \"^5.16.5\",\r\n    \"@testing-library/react\": \"^13.4.0\",\r\n    \"@testing-library/user-event\": \"^13.5.0\",\r\n    \"axios\": \"^1.4.0\",\r\n    \"react\": \"^18.2.0\",\r\n    \"react-dom\": \"^18.2.0\",\r\n    \"react-router-dom\": \"^6.14.1\",\r\n    \"react-scripts\": \"5.0.1\",\r\n    \"web-vitals\": \"^2.1.4\"\r\n  },\r\n  \"scripts\": {\r\n    \"start\": \"react-scripts start\",\r\n    \"build\": \"react-scripts build\",\r\n    \"test\": \"react-scripts test\",\r\n    \"eject\": \"react-scripts eject\",\r\n    \"eslint\": \"eslint ./src/**/*.{js,jsx,ts,tsx} --fix\",\r\n    \"format\": \"prettier --write . --config ./.prettierrc\",\r\n    \"pre-commit\": \"eslint ./src/**/*.{js,jsx} --fix && prettier --write . --config ./.prettierrc\",\r\n    \"prepare\": \"husky install\"\r\n  },\r\n  \"eslintConfig\": {\r\n    \"extends\": [\r\n      \"react-app\",\r\n      \"react-app/jest\"\r\n    ]\r\n  },\r\n  \"browserslist\": {\r\n    \"production\": [\r\n      \">0.2%\",\r\n      \"not dead\",\r\n      \"not op_mini all\"\r\n    ],\r\n    \"development\": [\r\n      \"last 1 chrome version\",\r\n      \"last 1 firefox version\",\r\n      \"last 1 safari version\"\r\n    ]\r\n  },\r\n  \"devDependencies\": {\r\n    \"eslint\": \"^8.44.0\",\r\n    \"husky\": \"^8.0.0\",\r\n    \"prettier\": \"^3.0.0\"\r\n  }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/package.json b/package.json
+--- a/package.json	(revision 7971cdefa21439591cd4bb3609048c163a293745)
++++ b/package.json	(date 1689082868949)
+@@ -1,4 +1,4 @@
+-{
++ {
+   "name": "spacecipssi",
+   "version": "0.1.0",
+   "private": true,

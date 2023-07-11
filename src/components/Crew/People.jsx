@@ -9,6 +9,8 @@ const People = ({people}) => {
             <h3>{people.agency}</h3>
             <a href={people.wikipedia}>Wiki</a>
         </div>
+
+
     );
 }
 

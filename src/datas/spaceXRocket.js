@@ -1,7 +1,7 @@
 import axios from 'axios';
 export const getRockets = async () => {
   try {
-    return (await axios.get("https://api.spacexdata.com/v4/rocket")).data;
+    return (await axios.get('https://api.spacexdata.com/v4/rocket')).data;
   } catch (error) {
     console.error(error);
   }

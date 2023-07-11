@@ -1,19 +1,21 @@
-import React, { useEffect, useState } from 'react';
-import { getHistories } from '../datas/spaceXHistory';
-import Article from '../components/History/Article';
 import { Box, CircularProgress } from '@mui/material';
-const HistoriesList = () => {
-  const [histories, setHistories] = useState([]);
+import React, { useEffect, useState } from 'react';
+import { getRockets } from '../datas/spaceXRocket';
+import Rocket from '../components/Rocket/Rocket';
+const Rockets = () => {
+  const [rockets, setRockets] = useState([]);
 
   const getData = async () => {
-    const data = await getHistories();
-    setHistories(data ? data : []);
+    const data = await getRockets();
+    setRockets(data ? data : []);
   };
 
   useEffect(() => {
     getData();
   }, []);
-  if (histories.length === 0) {
+  //   getRockets
+  console.log(rockets);
+  if (rockets.length === 0) {
     <Box
       sx={{
         display: 'flex',
@@ -35,13 +37,14 @@ const HistoriesList = () => {
         alignItems: 'center',
         flexWrap: 'wrap',
         backgroundColor: '#FAF9F8',
+        gap: '40px',
       }}
     >
-      {histories.map((article, i) => (
-        <Article key={i} article={article} />
+      {rockets.map((rocket, i) => (
+        <Rocket key={i} rocket={rocket} />
       ))}
     </Box>
   );
 };
 
-export default HistoriesList;
+export default Rockets;

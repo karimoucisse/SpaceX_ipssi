@@ -51,6 +51,7 @@ const Home = () => {
         alignItems: 'center',
         gap: '40px',
         padding: '50px',
+        backgroundColor: '#FAF9F8',
       }}
     >
       {peoples.map((people, i) => (

@@ -1,0 +1,37 @@
+# dependencies
+/node_modules
+/public
+/public/dsfr/*
+/public/accessConfig/*
+/public/*
+.pnp.js
+/app/public/dsfr/
+/app/public/dsfr/*
+
+#kpi
+/data/*
+data/*
+# testing
+/coverage
+
+#regex
+src/utils/regex/regex.json
+
+# production
+/build
+/build/static/js/*
+/build/static/**
+/build/**
+/public
+public
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

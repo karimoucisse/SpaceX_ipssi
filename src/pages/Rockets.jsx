@@ -14,7 +14,6 @@ const Rockets = () => {
     getData();
   }, []);
   //   getRockets
-  console.log(rockets);
   if (rockets.length === 0) {
     <Box
       sx={{

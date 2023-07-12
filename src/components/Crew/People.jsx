@@ -11,6 +11,7 @@ import { useNavigate } from 'react-router-dom';
 
 const People = ({ people }) => {
   //   const navigate = useNavigate();
+  console.log(people);
   return (
     <Card
       sx={{
@@ -22,7 +23,8 @@ const People = ({ people }) => {
       }}
       //   onClick={() => navigate(`/pokemon/${pokemon.pokedexId}`)}
     >
-      <Link href={people?.wikipedia} color="inherit">
+      <Link href={`/crew/${people.id}`} color="inherit">
+        
         <CardActionArea>
           <CardMedia
             component="img"

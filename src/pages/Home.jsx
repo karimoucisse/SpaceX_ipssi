@@ -1,34 +1,57 @@
-import { Box, CircularProgress, Pagination } from '@mui/material';
+import {
+  Box,
+  Button,
+  CircularProgress,
+  Link,
+  Stack,
+  Typography,
+} from '@mui/material';
 import People from '../components/Crew/People';
 import { useEffect, useState } from 'react';
 import { getCrew } from '../datas/spaceXCrew';
+import { styled } from 'styled-components';
+import { getHistories } from '../datas/spaceXHistory';
+import { getRockets } from '../datas/spaceXRocket';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+import './style.css';
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from 'swiper';
+
+const Image = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  width: 100% !important;
+  max-height: 70vh !important;
+  border-radius: 5px;
+`;
 const Home = () => {
+  const [histories, setHistories] = useState([]);
   const [peoples, setPeoples] = useState([]);
-  const [value, setValue] = useState([]);
-  const [page, setPage] = useState(1);
-  // const navigate = useNavigate();
-  const handleChange = (e, value) => {
-    setPage(value);
-    console.log(value);
-  };
+  const [rockets, setRockets] = useState([]);
 
   const getData = async () => {
-    const data = await getCrew();
-    const firstIndex = (page - 1) * 8;
-    setPeoples(data.slice(firstIndex, firstIndex + 8));
-    setValue(data);
-  };
+    const historiesData = await getHistories();
+    setHistories(historiesData ? historiesData : []);
 
+    const rocketsData = await getRockets();
+    setRockets(rocketsData ? rocketsData : []);
+
+    const crewsData = await getCrew();
+    setPeoples(crewsData ? crewsData : []);
+  };
   useEffect(() => {
     getData();
   }, []);
 
-  useEffect(() => {
-    getData();
-  }, [page]);
-
-  if (peoples.length === 0) {
+  if (histories.length === 0 || peoples.length === 0 || rockets.length === 0) {
     <Box
       sx={{
         display: 'flex',
@@ -50,21 +73,60 @@ const Home = () => {
         justifyContent: 'center',
         alignItems: 'center',
         gap: '40px',
-        padding: '50px',
+        padding: '50px 100px',
         backgroundColor: '#FAF9F8',
       }}
     >
-      {peoples.map((people, i) => (
-        <People key={i} people={people} />
-      ))}
-      <Box display="flex" width="100%" justifyContent="center">
-        <Pagination
-          count={Math.round(value.length / 8)}
-          color="primary"
-          shape="rounded"
-          page={page}
-          onChange={handleChange}
-        />
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2700,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        // modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <Image src={rockets[1]?.flickr_images[1]} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src={rockets[1]?.flickr_images[2]} />{' '}
+        </SwiperSlide>
+      </Swiper>
+
+      <Box>
+        <Stack
+          alignItems="center"
+          direction="row"
+          mb={2}
+          px={1}
+          justifyContent="space-between"
+        >
+          <Typography variant="h5">Equipages</Typography>
+          <Button
+            variant="contained"
+            sx={{
+              backgroundColor: '#1c2930',
+              '&:hover': {
+                background: '#1c2930',
+              },
+            }}
+          >
+            <Link href={`/crews`} color="inherit">
+              Voir Plus
+            </Link>
+          </Button>
+        </Stack>
+        <Box display="flex" gap={4}>
+          {peoples.slice(0, 4).map((people, i) => (
+            <People key={i} people={people} />
+          ))}
+        </Box>
       </Box>
     </Box>
   );

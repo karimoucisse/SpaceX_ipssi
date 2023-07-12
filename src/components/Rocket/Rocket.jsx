@@ -21,7 +21,7 @@ const Rocket = ({ rocket }) => {
         borderRadius: '10px',
       }}
     >
-      <Link href={rocket.wikipedia} color="inherit">
+      <Link href={rocket.wikipedia} color="inherit" target='blank'>
         <CardActionArea>
           <CardMedia
             component="img"

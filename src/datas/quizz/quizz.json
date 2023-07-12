@@ -2,36 +2,18 @@
   "1": [
     {
       "question": "Qui est le PDG de SpaceX?",
-      "response": [
-        "Richard Branson",
-        "Elon Musk",
-        "Jeff Bezos",
-        "Steve Jobs"
-      ],
+      "response": ["Richard Branson", "Elon Musk", "Jeff Bezos", "Steve Jobs"],
       "goodResponse": 1
     },
     {
       "question": "En quelle année a été fondée l'agence ?",
-      "response": [
-        "1998",
-        "2000",
-        "2002",
-        "2005"
-      ],
+      "response": ["1998", "2000", "2002", "2005"],
       "goodResponse": 2
     },
     {
       "question": "Les quels de ces fusées ont été construite par SpaceX?",
-      "response": [
-        "Falcon 1",
-        "Soyouz",
-        "Starship",
-        "Voyager 1"
-      ],
-      "goodResponse": [
-        0,
-        2
-      ]
+      "response": ["Falcon 1", "Soyouz", "Starship", "Voyager 1"],
+      "goodResponse": [0, 2]
     },
     {
       "question": "Ou a été construite Falcon 1?",
@@ -45,32 +27,17 @@
     },
     {
       "question": "Quel est le nom de la capsule spatiale habitable de SpaceX ? ",
-      "response": [
-        "Crew Dragon",
-        "Orion",
-        "Soyouz",
-        "Shenzhou"
-      ],
+      "response": ["Crew Dragon", "Orion", "Soyouz", "Shenzhou"],
       "goodResponse": 0
     },
     {
       "question": "Quel est le nom du premier vol habité de SpaceX?",
-      "response": [
-        "Demo-1",
-        "Demo-2",
-        "Crew-1",
-        "Crew-2"
-      ],
+      "response": ["Demo-1", "Demo-2", "Crew-1", "Crew-2"],
       "goodResponse": 1
     },
     {
       "question": "Quel est le nom du premier satellite lancé par SpaceX?",
-      "response": [
-        "Starlink-1",
-        "Starlink-2",
-        "Starlink-3",
-        "Starlink-4"
-      ],
+      "response": ["Starlink-1", "Starlink-2", "Starlink-3", "Starlink-4"],
       "goodResponse": 0
     },
     {
@@ -85,44 +52,24 @@
     },
     {
       "question": "Quel est le nom de la première mission spatiale entièrement composée de civils?",
-      "response": [
-        "Inspiration4",
-        "Crew-1",
-        "Crew-2",
-        "Demo-2"
-      ],
+      "response": ["Inspiration4", "Crew-1", "Crew-2", "Demo-2"],
       "goodResponse": 0
     },
     {
       "question": "Quelle est la hauteur de Starship?",
-      "response": [
-        "~120 mètres",
-        "~70 mètres",
-        "~50 mètres",
-        "~30 mètres"
-      ],
+      "response": ["~120 mètres", "~70 mètres", "~50 mètres", "~30 mètres"],
       "goodResponse": 0
     }
   ],
   "2": [
     {
       "question": "Combien de moteur Merlin 1C possède Falcon 1?",
-      "response": [
-        "1",
-        "5",
-        "10",
-        "15"
-      ],
+      "response": ["1", "5", "10", "15"],
       "goodResponse": 0
     },
     {
       "question": "Combien de tonne pèse Falcon 1?",
-      "response": [
-        "1",
-        "2",
-        "3",
-        "4"
-      ],
+      "response": ["1", "2", "3", "4"],
       "goodResponse": 2
     },
     {
@@ -143,11 +90,7 @@
         "Christopher Sembroski",
         "Thomas Pasquiè"
       ],
-      "goodResponse": [
-        0,
-        1,
-        2
-      ]
+      "goodResponse": [0, 1, 2]
     },
     {
       "question": "Les quel de ces membre d'équipage ne font pas partie de la NASA?",
@@ -157,60 +100,31 @@
         "Christopher Sembroski",
         "Thomas Pesquet"
       ],
-      "goodResponse": [
-        1,
-        2,
-        3
-      ]
+      "goodResponse": [1, 2, 3]
     },
     {
       "question": "Quel est la fusée la plus grande de spaceX?",
-      "response": [
-        "Falcon 1",
-        "Falcon 9",
-        "Falcon Heavy",
-        "Starship"
-      ],
+      "response": ["Falcon 1", "Falcon 9", "Falcon Heavy", "Starship"],
       "goodResponse": 3
     },
     {
       "question": "Quel est la taille de Starship?",
-      "response": [
-        "118 m",
-        "125 m",
-        "131 m",
-        "139 m"
-      ],
+      "response": ["118 m", "125 m", "131 m", "139 m"],
       "goodResponse": 0
     },
     {
       "question": "Combien de moteur Merlin 1D+ possède Starship?",
-      "response": [
-        "3 moteurs",
-        "6 moteurs",
-        "9 moteurs",
-        "12 moteurs"
-      ],
+      "response": ["3 moteurs", "6 moteurs", "9 moteurs", "12 moteurs"],
       "goodResponse": 2
     },
     {
       "question": "Combien d'employer possède SpaceX?",
-      "response": [
-        "9 300",
-        "9 500",
-        "9 800",
-        "10 341"
-      ],
+      "response": ["9 300", "9 500", "9 800", "10 341"],
       "goodResponse": 2
     },
     {
       "question": "Combien d'employer possède SpaceX?",
-      "response": [
-        "9 300",
-        "9 500",
-        "9 800",
-        "10 341"
-      ],
+      "response": ["9 300", "9 500", "9 800", "10 341"],
       "goodResponse": 2
     }
   ],
@@ -227,92 +141,47 @@
     },
     {
       "question": "En quel année SpaceX parvien a envoyer un satellite commercial en orbite?",
-      "response": [
-        "2006",
-        "2007",
-        "2008",
-        "2009"
-      ],
+      "response": ["2006", "2007", "2008", "2009"],
       "goodResponse": 3
     },
     {
       "question": "Combien de véhicule SpaceX a consue",
-      "response": [
-        "4",
-        "6",
-        "8",
-        "10"
-      ],
+      "response": ["4", "6", "8", "10"],
       "goodResponse": 0
     },
     {
       "question": "Quel est le nom du premier vaisseau spatial de SpaceX capable d'effectuer des atterrissages verticaux?",
-      "response": [
-        "Dragon",
-        "Falcon 9",
-        "Starship",
-        "Crew Dragon"
-      ],
+      "response": ["Dragon", "Falcon 9", "Starship", "Crew Dragon"],
       "goodResponse": 1
     },
     {
       "question": "Quelle est la hauteur de la fusée Falcon Heavy?",
-      "response": [
-        "64 mètres",
-        "70 mètres",
-        "76 mètres",
-        "82 mètres"
-      ],
+      "response": ["64 mètres", "70 mètres", "76 mètres", "82 mètres"],
       "goodResponse": 2
     },
     {
       "question": "Quelle entreprise a été la première à envoyer un vaisseau spatial privé à la Station spatiale internationale (ISS)?",
-      "response": [
-        "SpaceX",
-        "Blue Origin",
-        "Boeing",
-        "Virgin Galactic"
-      ],
+      "response": ["SpaceX", "Blue Origin", "Boeing", "Virgin Galactic"],
       "goodResponse": 0
     },
     {
       "question": "Quel est le nom du premier vaisseau spatial de SpaceX capable d'effectuer des atterrissages verticaux?",
-      "response": [
-        "Dragon",
-        "Falcon 9",
-        "Starship",
-        "Crew Dragon"
-      ],
+      "response": ["Dragon", "Falcon 9", "Starship", "Crew Dragon"],
       "goodResponse": 1
     },
     {
       "question": "Quel est le nom du projet de SpaceX visant à établir une colonie humaine sur Mars?",
-      "response": [
-        "Red Dragon",
-        "Mars One",
-        "Mars Mission",
-        "Starship"
-      ],
+      "response": ["Red Dragon", "Mars One", "Mars Mission", "Starship"],
       "goodResponse": 3
     },
     {
       "question": "Quel est le nom du premier vol orbital de la fusée Falcon Heavy?",
-      "response": [
-        "Demo-1",
-        "Crew-1",
-        "Artemis 1",
-        "STP-2"
-      ],
+      "response": ["Demo-1", "Crew-1", "Artemis 1", "STP-2"],
       "goodResponse": 3
     },
     {
       "question": "Quelle est la première capsule spatiale de SpaceX à avoir transporté des astronautes vers la Station spatiale internationale (ISS)?",
-      "response": [
-        "Dragon",
-        "Starliner",
-        "Orion",
-        "Crew Dragon"
-      ],
+      "response": ["Dragon", "Starliner", "Orion", "Crew Dragon"],
       "goodResponse": 3
     }
   ],
@@ -329,32 +198,17 @@
     },
     {
       "question": "Quelle est la capacité de charge maximale de la fusée Falcon Heavy ?",
-      "response": [
-        "20 tonnes",
-        "50 tonnes",
-        "100 tonnes",
-        "150 tonnes"
-      ],
+      "response": ["20 tonnes", "50 tonnes", "100 tonnes", "150 tonnes"],
       "goodResponse": 2
     },
     {
       "question": "Quel est le nom du projet de SpaceX visant à envoyer des touristes autour de la Lune?",
-      "response": [
-        "Starship",
-        "Dragon",
-        "Artemis",
-        "DearMoon"
-      ],
+      "response": ["Starship", "Dragon", "Artemis", "DearMoon"],
       "goodResponse": 3
     },
     {
       "question": "Quel est le nom du premier vol orbital de la fusée Falcon 1 ?",
-      "response": [
-        "DemoSat",
-        "FalconSat",
-        "RazakSat",
-        "COTS Demo Flight 1"
-      ],
+      "response": ["DemoSat", "FalconSat", "RazakSat", "COTS Demo Flight 1"],
       "goodResponse": 0
     },
     {
@@ -375,11 +229,7 @@
         "Vandenberg Air Force Base",
         "SpaceX Launch Facility"
       ],
-      "goodResponse": [
-        0,
-        1,
-        2
-      ]
+      "goodResponse": [0, 1, 2]
     },
     {
       "question": "Quelles sont les missions accomplies par SpaceX ?",
@@ -389,11 +239,7 @@
         "Lancement de sondes interplanétaires",
         "Missions lunaires habitées"
       ],
-      "goodResponse": [
-        0,
-        1,
-        2
-      ]
+      "goodResponse": [0, 1, 2]
     },
     {
       "question": "Quels sont les objectifs environnementaux de SpaceX ?",
@@ -417,10 +263,7 @@
     },
     {
       "question": "Avez vous aimé ce quizz",
-      "response": [
-        "Oui",
-        "Non"
-      ],
+      "response": ["Oui", "Non"],
       "goodResponse": 0
     }
   ]

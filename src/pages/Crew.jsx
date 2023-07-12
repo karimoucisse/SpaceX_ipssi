@@ -79,7 +79,7 @@ const Crew = () => {
               },
             }}
           >
-            <Link href={people?.wikipedia} target='blank' color="inherit">
+            <Link href={people?.wikipedia} target="blank" color="inherit">
               Site web
             </Link>
           </Button>

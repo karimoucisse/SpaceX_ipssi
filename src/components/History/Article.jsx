@@ -16,7 +16,7 @@ const Article = ({ article }) => {
         borderRadius: '20px',
       }}
     >
-      <Link href={article.links.article} target='blank' color="inherit">
+      <Link href={article.links.article} target="blank" color="inherit">
         <CardContent
           sx={{
             backgroundColor: '#1c2930',

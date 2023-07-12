@@ -5,29 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f047d0a1-89a3-4840-be21-75e394e7eeef" name="Changes" comment="Add quizz.json">
-      <change afterPath="$PROJECT_DIR$/src/pages/Info.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Quizzs.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Crew/People.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Crew/People.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Details.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Details.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/History/Article.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/History/Article.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Quizz/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Quizz/Main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Quizz/Response.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Quizz/Response.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Rocket/Rocket.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Rocket/Rocket.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/datas/quizz/quizz.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/datas/quizz/quizz.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/datas/spaceXRocket.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/datas/spaceXRocket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/slider/Slider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slider/Slider.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/slider/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slider/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Crew.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Crew.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Crews.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Crews.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/HistoriesList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/HistoriesList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Quizz.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Quizz.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Quizzs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Quizzs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Rocket.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Rocket.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Rockets.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Rockets.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Page404.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Page404.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/Router.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Router.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,21 +48,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/GitLib/Ipssi/React/SpaceX_ipssi/src/datas&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/GitLib/Ipssi/React/SpaceX_ipssi/src/datas",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\GitLib\\Ipssi\\React\\SpaceX_ipssi\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\GitLib\Ipssi\React\SpaceX_ipssi\src\datas" />
@@ -86,6 +85,9 @@
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f047d0a1-89a3-4840-be21-75e394e7eeef" name="Changes" comment="" />

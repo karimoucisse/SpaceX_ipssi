@@ -45,7 +45,9 @@ const Rocket = () => {
         <Typography variant="body2">
           First fly: {new Date(rocket.first_flight).toString()}
         </Typography>
-        <Typography variant="body2">Height: {rocket.height?.meters}m</Typography>
+        <Typography variant="body2">
+          Height: {rocket.height?.meters}m
+        </Typography>
         <Typography variant="body2">
           Width: {rocket.diameter?.meters}m
         </Typography>

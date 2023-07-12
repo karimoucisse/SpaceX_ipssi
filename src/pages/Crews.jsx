@@ -58,9 +58,9 @@ const Crew = () => {
         <SearchBar placeHolder="Recherche ..." setValue={setSearchBarValue} />
       </Box>
       {peoples.length === 0 && searchBarValue.length > 0 ? (
-          <Box>
-            <Typography>Le personnage que vous chercher n'existe pas</Typography>
-          </Box>
+        <Box>
+          <Typography>Le personnage que vous chercher n'existe pas</Typography>
+        </Box>
       ) : (
         <>
           <Box

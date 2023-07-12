@@ -6,8 +6,8 @@ import Rockets from '../pages/Rockets';
 import Page404 from './Page404';
 import Crews from '../pages/Crews';
 import Crew from '../pages/Crew';
-import Quizz from "../pages/Quizz";
-import Quizzs from "../pages/Quizzs";
+import Quizz from '../pages/Quizz';
+import Quizzs from '../pages/Quizzs';
 const Router = () => {
   return (
     <BrowserRouter>

@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import Main from '../components/Quizz/Main';
 
 import QuizzData from '../datas/quizz/quizz.json';
-import {useParams} from "react-router-dom";
+import { useParams } from 'react-router-dom';
 
 const Question = () => {
-  const {id} = useParams();
+  const { id } = useParams();
 
   const [quizz, setQuizz] = useState(QuizzData[id]);
   const [quizzSelecter, setQuizzSelecter] = useState(0);
@@ -21,18 +21,17 @@ const Question = () => {
     }
   };
 
-  if(quizz)
-  return (
-    <>
-      {isFinish ? (
-        <div>Score: {score}</div>
-      ) : (
-        <Main question={quizz[quizzSelecter]} goNextQuestion={nextQuizz} />
-      )}
-    </>
-  );
-  else
-    return <></>
+  if (quizz)
+    return (
+      <>
+        {isFinish ? (
+          <div>Score: {score}</div>
+        ) : (
+          <Main question={quizz[quizzSelecter]} goNextQuestion={nextQuizz} />
+        )}
+      </>
+    );
+  else return <></>;
 };
 
 export default Question;

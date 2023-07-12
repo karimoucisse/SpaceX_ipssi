@@ -1,0 +1,34 @@
+[
+  {
+    "question": "Quelle est la distance moyenne entre la Terre et la Lune ?",
+    "response": [
+      "384 400 kilomètres",
+      "256 000 kilomètres",
+      "500 000 kilomètres"
+    ],
+    "goodResponse": 0
+  },
+  {
+    "question": "Quelle est la plus grande planète du système solaire ?",
+    "response": ["Saturne", "Jupiter", "Neptune"],
+    "goodResponse": 1
+  },
+  {
+    "question": "Quelle est la température approximative de l'espace interstellaire ?",
+    "response": [
+      "-270 degrés Celsius",
+      "-50 degrés Celsius",
+      "25 degrés Celsius"
+    ],
+    "goodResponse": 0
+  },
+  {
+    "question": "Qu'est-ce qu'une nébuleuse ?",
+    "response": [
+      "Un nuage de gaz et de poussière dans l'espace",
+      "Un trou noir supermassif",
+      "Un astéroïde en orbite autour du Soleil"
+    ],
+    "goodResponse": 0
+  }
+]

@@ -4,14 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f047d0a1-89a3-4840-be21-75e394e7eeef" name="Changes" comment="Merge">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="f047d0a1-89a3-4840-be21-75e394e7eeef" name="Changes" comment="Add quizz selection">
+      <change afterPath="$PROJECT_DIR$/src/components/All/ImageSelector.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Roadster.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Compoagny/Index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Compagny/Index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Details.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Rocket/Details.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Quizz/Response.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Quizz/Response.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Navigation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Navigation.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Quizz.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Quizz.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Quizzs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Quizzs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/All/SearchBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Crew.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Crew.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Crews.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Crews.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Rocket.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Rocket.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Router.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Router.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,8 +63,22 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\GitLib\Ipssi\React\SpaceX_ipssi\src\datas" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\GitLib\Ipssi\React\SpaceX_ipssi\src\components\All" />
+      <recent name="C:\GitLib\Ipssi\React\SpaceX_ipssi\src\components\Rocket" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.start">
+    <configuration name="pre-commit" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="pre-commit" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -71,6 +89,11 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.pre-commit" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -118,7 +141,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689168067477</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add quizz selection">
+      <option name="closed" value="true" />
+      <created>1689170061521</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1689170061521</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +170,7 @@
     <MESSAGE value="add new File For list people" />
     <MESSAGE value="Add quizz.json" />
     <MESSAGE value="Merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge" />
+    <MESSAGE value="Add quizz selection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add quizz selection" />
   </component>
 </project>

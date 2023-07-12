@@ -1,10 +1,9 @@
 import { Box, Button, Link, Stack, Typography } from '@mui/material';
 import React, { useState } from 'react';
 import { styled } from 'styled-components';
+import ImageSelector from '../All/ImageSelector';
 
 const Image = styled.img`
-  height: 75vh;
-  width: auto;
   object-fit: cover;
   max-height: 100vh;
   border-radius: 5px;
@@ -14,39 +13,7 @@ const Details = ({ image, title, link, children }) => {
   return (
     <Box display="flex" p={4}>
       {image && typeof image !== 'string' ? (
-        <Box
-          flex={1}
-          display="flex"
-          justifyContent="center"
-          sx={{ position: 'relative' }}
-        >
-          <Image src={image[imageIndex]} />
-          <Stack
-            direction="row"
-            spacing={3}
-            sx={{
-              position: 'absolute',
-              zIndex: 3,
-              bottom: '40px',
-              cursor: 'pointer',
-            }}
-          >
-            {image.map((element, i) => (
-              <Box
-                key={i}
-                height="20px"
-                width="20px"
-                spa
-                display="flex"
-                justifyContent="center"
-                alignItems="center"
-                backgroundColor={imageIndex == i ? 'red' : 'lightgray'}
-                sx={{ borderRadius: '50%' }}
-                onClick={() => setImageIndex(i.toString())}
-              ></Box>
-            ))}
-          </Stack>
-        </Box>
+        <ImageSelector img={image} sx={{ height: '500px', width: '500px' }} />
       ) : (
         <Box flex={1} display="flex" justifyContent="center">
           <Image src={image} />

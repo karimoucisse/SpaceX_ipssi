@@ -2,7 +2,7 @@ import { Box, CircularProgress, Pagination, Typography } from '@mui/material';
 import People from '../components/Crew/People';
 import { useEffect, useState } from 'react';
 import { getCrew } from '../datas/spaceXCrew';
-import SearchBar from '../components/SearchBar';
+import SearchBar from '../components/All/SearchBar';
 
 const Crew = () => {
   const [peoples, setPeoples] = useState([]);

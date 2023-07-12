@@ -12,7 +12,7 @@ import People from '../components/Crew/People';
 import { useEffect, useState } from 'react';
 import { getCrew } from '../datas/spaceXCrew';
 import { styled } from 'styled-components';
-import Details from '../components/Details';
+import Details from '../components/Rocket/Details';
 
 const Image = styled.img`
   height: 75vh;

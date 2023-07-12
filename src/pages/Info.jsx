@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { getCompagny } from '../datas/spaceXCompagny';
 
+import Index from '../components/Compagny/Index';
+import { Box } from '@mui/material';
+
 const Info = () => {
-  const [infomation, setInformation] = useState(null);
+  const [information, setInformation] = useState(null);
 
   const getData = async () => {
     const data = await getCompagny();
@@ -12,7 +15,12 @@ const Info = () => {
   useEffect(() => {
     getData();
   }, []);
-  return <>{}</>;
+  if (information)
+    return (
+      <Box sx={{ mx: '50px', mt: 8, px: 8 }}>
+        <Index info={information} />
+      </Box>
+    );
 };
 
 export default Info;

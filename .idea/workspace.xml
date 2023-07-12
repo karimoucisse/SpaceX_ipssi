@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f047d0a1-89a3-4840-be21-75e394e7eeef" name="Changes" comment="Add quizz selection">
-      <change afterPath="$PROJECT_DIR$/src/components/All/ImageSelector.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Roadster.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Compoagny/Index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Compagny/Index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Details.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Rocket/Details.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SearchBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/All/SearchBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Crew.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Crew.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Crews.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Crews.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Rocket.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Rocket.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Compagny/Index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Compagny/Index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datas/spaceXCompagny.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/datas/spaceXCompagny.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Info.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Info.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/Router.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Router.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,25 +34,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/GitLib/Ipssi/React/SpaceX_ipssi/src/datas",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\GitLib\\Ipssi\\React\\SpaceX_ipssi\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/GitLib/Ipssi/React/SpaceX_ipssi/src/datas&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\GitLib\\Ipssi\\React\\SpaceX_ipssi\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\GitLib\Ipssi\React\SpaceX_ipssi\src\datas" />
@@ -108,6 +102,7 @@
       <updated>1689081056092</updated>
       <workItem from="1689081061720" duration="2846000" />
       <workItem from="1689083986948" duration="2979000" />
+      <workItem from="1689176371554" duration="110000" />
     </task>
     <task id="LOCAL-00001" summary="add new File For list people">
       <option name="closed" value="true" />
@@ -149,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689170061521</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add quizz selection">
+      <option name="closed" value="true" />
+      <created>1689174979344</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1689174979344</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

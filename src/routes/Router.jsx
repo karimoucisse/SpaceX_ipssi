@@ -10,6 +10,7 @@ import Crew from '../pages/Crew';
 import Quizz from '../pages/Quizz';
 import Quizzs from '../pages/Quizzs';
 import Roadster from '../pages/Roadster';
+import Information from '../pages/Info';
 const Router = () => {
   return (
     <BrowserRouter>
@@ -24,6 +25,7 @@ const Router = () => {
           <Route path="/rocket/:id" element={<Rocket />} />
           <Route path="/quizz" element={<Quizzs />} />
           <Route path="/quizz/:id" element={<Quizz />} />
+          <Route path="/informations" element={<Information />} />
           <Route path="*" element={<Page404 />} />
         </Routes>
       </Navigation>

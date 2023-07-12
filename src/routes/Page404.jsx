@@ -24,7 +24,7 @@ const Page404 = () => {
   return (
     <Container>
       <Stack spacing={1} mb={4}>
-        <Typography variant="h4">Oups!</Typography>
+        <Typography variant="h4">Oups !</Typography>
         <Typography variant="h4">La page que vous recherchez</Typography>
         <Typography variant="h4">semble introuvable</Typography>
       </Stack>

@@ -1,7 +1,7 @@
 import { Box, CircularProgress, Pagination, Typography } from '@mui/material';
 import People from '../components/Crew/People';
 import { useEffect, useState } from 'react';
-import { getCrew } from '../datas/spaceXCrew';
+import { getCrews } from '../datas/spaceXCrew';
 import SearchBar from '../components/SearchBar';
 
 const Crew = () => {
@@ -14,7 +14,7 @@ const Crew = () => {
   };
 
   const getData = async () => {
-    const data = await getCrew();
+    const data = await getCrews();
     const firstIndex = (page - 1) * 8;
     setPeoples(data.slice(firstIndex, firstIndex + 8));
     setValue(data);
@@ -29,12 +29,16 @@ const Crew = () => {
   }, [page]);
 
   useEffect(() => {
-    if (searchBarValue.length > 0) {
+    if (searchBarValue) {
       const newData = value.filter((element) =>
         element.name.toLowerCase().includes(searchBarValue.toLowerCase()),
       );
       const firstIndex = (page - 1) * 8;
-      setPeoples(newData.slice(firstIndex, firstIndex + 8));
+      if (newData.length > 8) {
+        setPeoples(newData.slice(0, 8));
+      } else {
+        setPeoples(newData);
+      }
     }
   }, [searchBarValue]);
 
@@ -58,9 +62,17 @@ const Crew = () => {
         <SearchBar placeHolder="Recherche ..." setValue={setSearchBarValue} />
       </Box>
       {peoples.length === 0 && searchBarValue.length > 0 ? (
-          <Box>
-            <Typography>Le personnage que vous chercher n'existe pas</Typography>
-          </Box>
+        <Box
+          height="60vh"
+          width="100%"
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <Typography variant="h5">
+            La personne que vous cherchez n'existe pas.
+          </Typography>
+        </Box>
       ) : (
         <>
           <Box

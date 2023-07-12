@@ -8,18 +8,16 @@ import {
 } from '@mui/material';
 import People from '../components/Crew/People';
 import { useEffect, useState } from 'react';
-import { getCrew } from '../datas/spaceXCrew';
+import { getCrews } from '../datas/spaceXCrew';
 import { styled } from 'styled-components';
 import { getHistories } from '../datas/spaceXHistory';
 import { getRockets } from '../datas/spaceXRocket';
 import Slider from '../components/slider/Slider';
 
 const Image = styled.img`
-  width: 100%;
-  height: 100%;
+  width: 300px;
+  height: auto;
   object-fit: cover;
-  width: 100% !important;
-  max-height: 70vh !important;
   border-radius: 5px;
 `;
 const Home = () => {
@@ -34,7 +32,7 @@ const Home = () => {
     const rocketsData = await getRockets();
     setRockets(rocketsData ? rocketsData : []);
 
-    const crewsData = await getCrew();
+    const crewsData = await getCrews();
     setPeoples(crewsData ? crewsData : []);
   };
   useEffect(() => {
@@ -68,7 +66,6 @@ const Home = () => {
       }}
     >
       <Slider imageArray={rockets[1]?.flickr_images} />
-
       <Box>
         <Stack
           alignItems="center"

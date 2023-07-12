@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getRockets } from '../datas/spaceXRocket';
+import { getRocket } from '../datas/spaceXRocket';
 import { Box, CircularProgress, Stack, Typography } from '@mui/material';
 import Details from '../components/Details';
 import { useParams } from 'react-router-dom';
@@ -9,8 +9,7 @@ const Rocket = () => {
   const [rocket, setRocket] = useState([]);
 
   const getData = async () => {
-    let data = await getRockets();
-    data = data.find((item) => item.id.toString() === id);
+    let data = await getRocket(id);
     setRocket(data ? data : []);
   };
 
@@ -45,7 +44,9 @@ const Rocket = () => {
         <Typography variant="body2">
           First fly: {new Date(rocket.first_flight).toString()}
         </Typography>
-        <Typography variant="body2">Height: {rocket.height?.meters}m</Typography>
+        <Typography variant="body2">
+          Height: {rocket.height?.meters}m
+        </Typography>
         <Typography variant="body2">
           Width: {rocket.diameter?.meters}m
         </Typography>

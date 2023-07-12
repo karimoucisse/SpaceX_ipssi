@@ -1,17 +1,17 @@
 import { Box, Link, Stack, Typography } from '@mui/material';
-import { Swiper, SwiperSlide } from 'swiper/react';
 function Header() {
+  const currentLocation = window.location.pathname;
   const linkList = [
     {
       text: 'Accueil',
       link: '',
     },
     {
-      text: 'Equipage',
+      text: 'Equipages',
       link: 'crews',
     },
     {
-      text: 'Historique',
+      text: 'Histoires',
       link: 'histories',
     },
     {
@@ -21,6 +21,10 @@ function Header() {
     {
       text: 'Informations',
       link: 'informations',
+    },
+    {
+      text: 'Lancement',
+      link: 'launches',
     },
   ];
   return (
@@ -45,8 +49,15 @@ function Header() {
         sx={{ flex: '2', color: 'white', alignItems: 'center' }}
       >
         {linkList.map((item, i) => (
-          <Link href={`/${item?.link}`} color="inherit" key={i}>
-            <Typography color="white" variant="body1">
+          <Link href={`/${item.link}`} color="inherit" key={i}>
+            <Typography
+              color={
+                currentLocation.includes(item.link) && item.link.length > 1
+                  ? 'lightgray'
+                  : 'white'
+              }
+              variant="body1"
+            >
               {item.text}
             </Typography>
           </Link>

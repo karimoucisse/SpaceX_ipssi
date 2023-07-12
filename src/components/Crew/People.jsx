@@ -10,8 +10,6 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const People = ({ people }) => {
-  //   const navigate = useNavigate();
-  console.log(people);
   return (
     <Card
       sx={{
@@ -21,7 +19,6 @@ const People = ({ people }) => {
           'rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px',
         borderRadius: '10px',
       }}
-      //   onClick={() => navigate(`/pokemon/${pokemon.pokedexId}`)}
     >
       <Link href={`/crew/${people.id}`} color="inherit">
         <CardActionArea>

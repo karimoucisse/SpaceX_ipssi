@@ -26,16 +26,15 @@ const Crew = () => {
   const [people, setPeople] = useState([]);
 
   const getData = async () => {
-    const data = await getCrew();
-    const crew = data.find((item) => item.id.toString() === id);
-    setPeople(crew);
+    const data = await getCrew(id);
+    // const crew = data.find((item) => item.id.toString() === id);
+    setPeople(data);
   };
 
   useEffect(() => {
     getData();
   }, []);
 
-  console.log(people);
   if (people.length === 0) {
     <Box
       sx={{

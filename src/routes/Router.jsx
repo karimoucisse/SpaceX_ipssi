@@ -7,6 +7,8 @@ import Page404 from './Page404';
 import Crews from '../pages/Crews';
 import Crew from '../pages/Crew';
 import Rocket from '../pages/Rocket';
+import Launches from '../pages/Launches';
+import Launche from '../pages/Launche';
 const Router = () => {
   return (
     <BrowserRouter>
@@ -18,6 +20,8 @@ const Router = () => {
           <Route path="/histories" element={<HistoriesList />} />
           <Route path="/rockets" element={<Rockets />} />
           <Route path="/rocket/:id" element={<Rocket />} />
+          <Route path="/launches" element={<Launches />} />
+          <Route path="/launche/:id" element={<Launche />} />
           <Route path="*" element={<Page404 />} />
         </Routes>
       </Navigation>

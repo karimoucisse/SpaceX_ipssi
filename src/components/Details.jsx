@@ -59,20 +59,22 @@ const Details = ({ image, title, link, children }) => {
           </Typography>
           {children}
 
-          <Button
-            variant="contained"
-            size="large"
-            sx={{
-              backgroundColor: '#1c2930',
-              '&:hover': {
-                background: '#1c2930',
-              },
-            }}
-          >
-            <Link href={link} target="blank" color="inherit">
-              Site web
-            </Link>
-          </Button>
+          {link && (
+            <Button
+              variant="contained"
+              size="large"
+              sx={{
+                backgroundColor: '#1c2930',
+                '&:hover': {
+                  background: '#1c2930',
+                },
+              }}
+            >
+              <Link href={link} target="blank" color="inherit">
+                Site web
+              </Link>
+            </Button>
+          )}
         </Box>
       </Box>
     </Box>

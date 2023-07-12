@@ -5,7 +5,6 @@ const Response = ({ value, selected, isGoodResponse, isSelected }) => {
   // surbrillance si isGoodResponse
   return (
     <Box
-      onClick={selected}
       sx={{
         width: '50%',
         textAlign: 'center',
@@ -25,7 +24,9 @@ const Response = ({ value, selected, isGoodResponse, isSelected }) => {
           border: '1px solid #797979FF',
           borderRadius: '5px',
           padding: '5px',
+          cursor: 'pointer',
         }}
+        onClick={selected}
       >
         <Typography>{value}</Typography>
       </Box>

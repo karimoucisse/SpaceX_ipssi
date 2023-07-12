@@ -4,26 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f047d0a1-89a3-4840-be21-75e394e7eeef" name="Changes" comment="Add quizz.json">
+    <list default="true" id="f047d0a1-89a3-4840-be21-75e394e7eeef" name="Changes" comment="Merge">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Details.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Details.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/History/Article.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/History/Article.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Rocket/Rocket.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Rocket/Rocket.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SearchBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/slider/Slider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slider/Slider.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/slider/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slider/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Crew.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Crew.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Crews.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Crews.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/HistoriesList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/HistoriesList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Quizz/Response.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Quizz/Response.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/Navigation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Navigation.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Quizz.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Quizz.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Quizzs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Quizzs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Rocket.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Rocket.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Rockets.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Rockets.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Router.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Router.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +110,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689158878313</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Merge">
+      <option name="closed" value="true" />
+      <created>1689168067477</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689168067477</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,8 +137,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add new File For list people" />
-    <MESSAGE value="Merge" />
     <MESSAGE value="Add quizz.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add quizz.json" />
+    <MESSAGE value="Merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge" />
   </component>
 </project>

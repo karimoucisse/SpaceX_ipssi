@@ -22,6 +22,10 @@ function Header() {
       text: 'Informations',
       link: 'informations',
     },
+    {
+      text: 'Quizz',
+      link: 'quizz',
+    },
   ];
   return (
     <Box

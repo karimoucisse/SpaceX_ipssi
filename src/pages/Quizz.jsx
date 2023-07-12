@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import Main from '../components/Quizz/Main';
 
 import QuizzData from '../datas/quizz/quizz.json';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+import { Box, Button, Typography } from '@mui/material';
 
 const Question = () => {
   const { id } = useParams();
@@ -25,7 +26,23 @@ const Question = () => {
     return (
       <>
         {isFinish ? (
-          <div>Score: {score}</div>
+          <Box
+            sx={{
+              display: 'flex',
+              justifyContent: 'center',
+              flexDirection: 'column',
+              alignItems: 'center',
+            }}
+          >
+            <Typography variant="h5" sx={{ mt: 6, mb: 2 }}>
+              Votre score est de : {score} pts
+            </Typography>
+            <Link to={'/quizz/'}>
+              <Button variant="contained" sx={{ my: 2 }}>
+                Retour à la selection de Quizz
+              </Button>
+            </Link>
+          </Box>
         ) : (
           <Main question={quizz[quizzSelecter]} goNextQuestion={nextQuizz} />
         )}

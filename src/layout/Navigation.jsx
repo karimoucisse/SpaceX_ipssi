@@ -5,11 +5,11 @@ import { Box } from '@mui/material';
 
 const Navigation = ({ children }) => {
   return (
-    <>
+    <Box sx={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
       <Header />
-      <Box sx={{ minHeight: '80vh' }}>{children}</Box>
+      <Box sx={{ flex: 1 }}>{children}</Box>
       <Footer />
-    </>
+    </Box>
   );
 };
 

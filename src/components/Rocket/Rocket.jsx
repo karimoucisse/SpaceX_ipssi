@@ -21,12 +21,11 @@ const Rocket = ({ rocket }) => {
         borderRadius: '10px',
       }}
     >
-      <Link href={rocket.wikipedia} color="inherit" target="blank">
+      <Link href={`/rocket/${rocket.id}`} color="inherit" target="blank">
         <CardActionArea>
           <CardMedia
             component="img"
             height="400"
-            // width="200"
             image={rocket.flickr_images[0]}
             alt={rocket.name}
           />
@@ -36,32 +35,14 @@ const Rocket = ({ rocket }) => {
               width: '100%',
             }}
           >
-            <Typography gutterBottom variant="h5" component="div" color="white">
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="div"
+              color="white"
+              textAlign="center"
+            >
               {rocket.name}
-            </Typography>
-            <Typography variant="body2" color="white">
-              By: {rocket.company}
-            </Typography>
-            <Typography variant="body2" color="white">
-              In: {rocket.country}
-            </Typography>
-            <Typography variant="body2" color="white">
-              First fly: {new Date(rocket.first_flight).toString()}
-            </Typography>
-            <Typography variant="body2" color="white">
-              Height: {rocket.height.meters}m
-            </Typography>
-            <Typography variant="body2" color="white">
-              Width: {rocket.diameter.meters}m
-            </Typography>
-            <Typography variant="body2" color="white">
-              Mass: {rocket.mass.kg}kg
-            </Typography>
-            <Typography variant="body2" color="white">
-              Stages: {rocket.stages}
-            </Typography>
-            <Typography variant="body2" color="white">
-              {rocket.description}
             </Typography>
           </CardContent>
         </CardActionArea>

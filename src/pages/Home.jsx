@@ -12,17 +12,7 @@ import { getCrew } from '../datas/spaceXCrew';
 import { styled } from 'styled-components';
 import { getHistories } from '../datas/spaceXHistory';
 import { getRockets } from '../datas/spaceXRocket';
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-
-import './style.css';
-
-// import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper';
+import Slider from '../components/slider/Slider';
 
 const Image = styled.img`
   width: 100%;
@@ -77,27 +67,7 @@ const Home = () => {
         backgroundColor: '#FAF9F8',
       }}
     >
-      <Swiper
-        spaceBetween={30}
-        centeredSlides={true}
-        autoplay={{
-          delay: 2700,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        // modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <Image src={rockets[1]?.flickr_images[1]} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={rockets[1]?.flickr_images[2]} />{' '}
-        </SwiperSlide>
-      </Swiper>
+      <Slider imageArray={rockets[1]?.flickr_images} />
 
       <Box>
         <Stack
@@ -122,7 +92,13 @@ const Home = () => {
             </Link>
           </Button>
         </Stack>
-        <Box display="flex" gap={4}>
+        <Box
+          display="flex"
+          gap={4}
+          flexWrap="wrap"
+          justifyContent="center"
+          mt={4}
+        >
           {peoples.slice(0, 4).map((people, i) => (
             <People key={i} people={people} />
           ))}

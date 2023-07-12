@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 function Header() {
   const linkList = [
     {
-      text: 'Acceuil',
+      text: 'Accueil',
       link: '',
     },
     {

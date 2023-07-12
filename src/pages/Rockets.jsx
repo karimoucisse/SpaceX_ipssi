@@ -37,6 +37,7 @@ const Rockets = () => {
         flexWrap: 'wrap',
         backgroundColor: '#FAF9F8',
         gap: '40px',
+        padding: '50px',
       }}
     >
       {rockets.map((rocket, i) => (

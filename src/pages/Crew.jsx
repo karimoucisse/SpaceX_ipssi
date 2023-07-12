@@ -12,6 +12,7 @@ import People from '../components/Crew/People';
 import { useEffect, useState } from 'react';
 import { getCrew } from '../datas/spaceXCrew';
 import { styled } from 'styled-components';
+import Details from '../components/Details';
 
 const Image = styled.img`
   height: 75vh;
@@ -50,42 +51,18 @@ const Crew = () => {
     </Box>;
   }
   return (
-    <Box display="flex" p={4}>
-      <Box flex={1} display="flex" justifyContent="center">
-        <Image src={people.image} />
-      </Box>
-      <Box flex={1} py={4}>
-        <Box px="100px">
-          <Typography variant="h4" mb={4}>
-            {people.name}
-          </Typography>
-          <Typography mb={2}>Agence: {people.agency}</Typography>
-          <Stack direction="row" spacing={2} mb={6}>
-            <Typography variant="body1">En activité: </Typography>
-            <Box
-              height="20px"
-              width="20px"
-              backgroundColor={people.status === 'active' ? 'green' : 'red'}
-              sx={{ borderRadius: '50%' }}
-            ></Box>
-          </Stack>
-          <Button
-            variant="contained"
-            size="large"
-            sx={{
-              backgroundColor: '#1c2930',
-              '&:hover': {
-                background: '#1c2930',
-              },
-            }}
-          >
-            <Link href={people?.wikipedia} target='blank' color="inherit">
-              Site web
-            </Link>
-          </Button>
-        </Box>
-      </Box>
-    </Box>
+    <Details image={people.image} title={people.name} link={people?.wikipedia}>
+      <Typography mb={2}>Agence: {people.agency}</Typography>
+      <Stack direction="row" spacing={2} mb={6}>
+        <Typography variant="body1">En activité: </Typography>
+        <Box
+          height="20px"
+          width="20px"
+          backgroundColor={people.status === 'active' ? 'green' : 'red'}
+          sx={{ borderRadius: '50%' }}
+        ></Box>
+      </Stack>
+    </Details>
   );
 };
 

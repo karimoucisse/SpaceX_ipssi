@@ -6,6 +6,7 @@ import Rockets from '../pages/Rockets';
 import Page404 from './Page404';
 import Crews from '../pages/Crews';
 import Crew from '../pages/Crew';
+import Rocket from '../pages/Rocket';
 const Router = () => {
   return (
     <BrowserRouter>
@@ -16,6 +17,7 @@ const Router = () => {
           <Route path="/crew/:id" element={<Crew />} />
           <Route path="/histories" element={<HistoriesList />} />
           <Route path="/rockets" element={<Rockets />} />
+          <Route path="/rocket/:id" element={<Rocket />} />
           <Route path="*" element={<Page404 />} />
         </Routes>
       </Navigation>

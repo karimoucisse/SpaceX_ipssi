@@ -24,7 +24,6 @@ const People = ({ people }) => {
       //   onClick={() => navigate(`/pokemon/${pokemon.pokedexId}`)}
     >
       <Link href={`/crew/${people.id}`} color="inherit">
-        
         <CardActionArea>
           <CardMedia
             component="img"

@@ -35,6 +35,8 @@ const HistoriesList = () => {
         alignItems: 'center',
         flexWrap: 'wrap',
         backgroundColor: '#FAF9F8',
+        gap: '20px',
+        padding: '40px 100px',
       }}
     >
       {histories.map((article, i) => (

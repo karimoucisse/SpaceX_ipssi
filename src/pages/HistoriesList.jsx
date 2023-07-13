@@ -35,7 +35,7 @@ const HistoriesList = () => {
         padding: '40px 100px',
       }}
     >
-      <Typography variant="h2">Histoires</Typography>
+      <Typography variant="h3">Histoires</Typography>
       <Box
         sx={{
           display: 'flex',

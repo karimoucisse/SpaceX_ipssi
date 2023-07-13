@@ -3,7 +3,6 @@ import People from '../components/Crew/People';
 import { useEffect, useState } from 'react';
 import { getCrews } from '../datas/spaceXCrew';
 import SearchBar from '../components/All/SearchBar';
-import { getCrew } from '../datas/spaceXCrew';
 
 const Crew = () => {
   const [peoples, setPeoples] = useState([]);
@@ -11,7 +10,7 @@ const Crew = () => {
   const [showValue, setShowValue] = useState([]);
   const [page, setPage] = useState(1);
   const [searchBarValue, setSearchBarValue] = useState('');
-  const firstIndex = (page - 1) * 8;
+  const firstIndex = (page - 1) * 9;
   const handleChange = (e, value) => {
     setPage(value);
     window.scrollTo({
@@ -22,8 +21,8 @@ const Crew = () => {
 
   const getData = async () => {
     const data = await getCrews();
-    const firstIndex = (page - 1) * 8;
-    setPeoples(data.slice(firstIndex, firstIndex + 8));
+    const firstIndex = (page - 1) * 9;
+    setPeoples(data.slice(firstIndex, firstIndex + 9));
     setValue(data);
   };
 
@@ -48,7 +47,7 @@ const Crew = () => {
         height: '100vh',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#FAF9F8',
+        backgroundColor: '#FAF9F9',
       }}
     >
       <CircularProgress size="100px" />
@@ -61,10 +60,11 @@ const Crew = () => {
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'end',
+          px: '100px',
         }}
       >
-        <Typography sx={{ pt: 8 }} variant="h2">
-          Équipage
+        <Typography sx={{ pt: 9 }} variant="h3">
+          Équipages
         </Typography>
         <Box>
           <SearchBar placeHolder="Recherche ..." setValue={setSearchBarValue} />
@@ -92,16 +92,16 @@ const Crew = () => {
               alignItems: 'center',
               gap: '40px',
               pt: 10,
-              backgroundColor: '#FAF9F8',
+              backgroundColor: '#FAF9F9',
             }}
           >
-            {showValue.slice(firstIndex, firstIndex + 8).map((people, i) => (
+            {showValue.slice(firstIndex, firstIndex + 9).map((people, i) => (
               <People key={i} people={people} />
             ))}
           </Box>
           <Box display="flex" width="100%" justifyContent="center">
             <Pagination
-              count={Math.round(showValue.length / 8)}
+              count={Math.round(showValue.length / 9)}
               color="primary"
               shape="rounded"
               page={page}

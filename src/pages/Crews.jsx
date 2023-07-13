@@ -70,7 +70,7 @@ const Crew = () => {
           <SearchBar placeHolder="Recherche ..." setValue={setSearchBarValue} />
         </Box>
       </Box>
-      {peoples.length === 0 && searchBarValue.length > 0 ? (
+      {showValue.length === 0 && searchBarValue.length > 0 ? (
         <Box
           height="60vh"
           width="100%"

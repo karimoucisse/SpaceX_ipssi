@@ -14,7 +14,11 @@ const LatestLauncheCard = ({ latestLaunche }) => {
   const mois = date.format('MMMM');
   const annee = date.format('YYYY');
   return (
-    <Link href={`/launche/${latestLaunche.id}`} color="inherit">
+    <Link
+      href={`/launche/${latestLaunche.id}`}
+      color="inherit"
+      sx={{ width: '100%', display: 'flex' }}
+    >
       <Stack
         alignItems="center"
         flexDirection="row"

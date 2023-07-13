@@ -78,7 +78,14 @@ const Launches = () => {
         <Typography variant="h5" mb={2}>
           Dernier lancement
         </Typography>
-        <LatestLauncheCard latestLaunche={latestLaunche} />
+        <Box
+          width="100%"
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <LatestLauncheCard latestLaunche={latestLaunche} />
+        </Box>
         <Box mb={4}>
           <SearchBar placeHolder="Recherche ..." setValue={setSearchBarValue} />
         </Box>

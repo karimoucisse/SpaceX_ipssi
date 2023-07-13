@@ -4,12 +4,13 @@ import {
   CardContent,
   CardMedia,
   Link,
+  Stack,
   Typography,
 } from '@mui/material';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const People = ({ people }) => {
+const People = ({ people, role }) => {
   return (
     <Card
       sx={{
@@ -39,8 +40,18 @@ const People = ({ people }) => {
             <Typography gutterBottom variant="h5" component="div" color="white">
               {people.name}
             </Typography>
+            {role && (
+              <Typography
+                gutterBottom
+                variant="body2"
+                component="div"
+                color="white"
+              >
+                Role: {role}
+              </Typography>
+            )}
             <Typography variant="body2" color="white">
-              {people.agency}
+              Agence: {people.agency}
             </Typography>
           </CardContent>
         </CardActionArea>

@@ -15,11 +15,7 @@ const Question = () => {
 
   const nextQuizz = (addScore) => {
     setScore((x) => x + addScore);
-    console.log(quizz.length, quizzSelecter);
     if (quizz.length > quizzSelecter + 1) setQuizzSelecter((x) => x + 1);
-    else {
-      console.log('Score : ', score);
-    }
   };
 
   if (quizz)

@@ -17,7 +17,6 @@ const Rocket = () => {
   useEffect(() => {
     getData();
   }, []);
-  console.log(rocket);
 
   if (rocket.length === 0) {
     <Box

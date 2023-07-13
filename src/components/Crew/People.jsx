@@ -11,7 +11,6 @@ import { useNavigate } from 'react-router-dom';
 
 const People = ({ people }) => {
   //   const navigate = useNavigate();
-  console.log(people);
   return (
     <Card
       sx={{

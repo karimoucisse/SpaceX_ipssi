@@ -35,7 +35,6 @@ const Crew = () => {
     getData();
   }, []);
 
-  console.log(people);
   if (people.length === 0) {
     <Box
       sx={{

@@ -1,14 +1,21 @@
-import { TextField } from '@mui/material';
+import { FilledInput, Input, InputAdornment, TextField } from '@mui/material';
 import React from 'react';
+import { Search } from '@mui/icons-material';
 
 const SearchBar = ({ setValue, placeHolder }) => {
   return (
-    <TextField
+    <Input
       id="outlined-basic"
-      label={placeHolder}
-      variant="filled"
+      placeholder={placeHolder}
+      // variant="filled"
       onChange={(e) => setValue(e.target.value)}
+      endAdornment={
+        <InputAdornment position="end">
+          <Search />
+        </InputAdornment>
+      }
       sx={{ width: '400px' }}
+      variant="standard"
     />
   );
 };

@@ -7,8 +7,10 @@ import SearchBar from '../components/All/SearchBar';
 const Crew = () => {
   const [peoples, setPeoples] = useState([]);
   const [value, setValue] = useState([]);
+  const [showValue, setShowValue] = useState([]);
   const [page, setPage] = useState(1);
   const [searchBarValue, setSearchBarValue] = useState('');
+  const firstIndex = (page - 1) * 8;
   const handleChange = (e, value) => {
     setPage(value);
   };
@@ -25,18 +27,13 @@ const Crew = () => {
   }, []);
 
   useEffect(() => {
-    getData();
-  }, [page]);
-
-  useEffect(() => {
-    if (searchBarValue.length > 0) {
-      const newData = value.filter((element) =>
-        element.name.toLowerCase().includes(searchBarValue.toLowerCase()),
-      );
-      const firstIndex = (page - 1) * 8;
-      setPeoples(newData.slice(firstIndex, firstIndex + 8));
-    }
-  }, [searchBarValue]);
+    setPage(1);
+    setShowValue(
+      value.filter((x) =>
+        x.name.toLowerCase().includes(searchBarValue.toLowerCase()),
+      ),
+    );
+  }, [searchBarValue, value]);
 
   if (peoples.length === 0 && searchBarValue.length === 0) {
     <Box
@@ -59,7 +56,9 @@ const Crew = () => {
       </Box>
       {peoples.length === 0 && searchBarValue.length > 0 ? (
         <Box>
-          <Typography>Le personnage que vous chercher n'existe pas</Typography>
+          <Typography>
+            La personne que vous chercher n'est pas trouvable
+          </Typography>
         </Box>
       ) : (
         <>
@@ -74,13 +73,13 @@ const Crew = () => {
               backgroundColor: '#FAF9F8',
             }}
           >
-            {peoples.map((people, i) => (
+            {showValue.slice(firstIndex, firstIndex + 8).map((people, i) => (
               <People key={i} people={people} />
             ))}
           </Box>
           <Box display="flex" width="100%" justifyContent="center">
             <Pagination
-              count={Math.round(value.length / 8)}
+              count={Math.round(showValue.length / 8)}
               color="primary"
               shape="rounded"
               page={page}

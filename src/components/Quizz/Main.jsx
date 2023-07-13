@@ -34,17 +34,14 @@ const Main = ({ question, goNextQuestion }) => {
   const goNext = () => {
     // Next step
     if (!isShowResponse) {
-      console.log(verifieResponse());
       // Verifier la bonne response
       // Montrer les responses
       setIsShowResponse(true);
     } else {
-      console.log(isCorrect);
       goNextQuestion(isCorrect ? timer : 0);
     }
   };
   const verifieResponse = (value) => {
-    console.log(responseSelected);
     clearInterval(timerRef);
     setIsShowResponse(true);
     if (

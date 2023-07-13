@@ -31,7 +31,7 @@ const Rockets = () => {
   }
   return (
     <Box sx={{ padding: '50px', backgroundColor: '#FAF9F8' }}>
-      <Typography variant="h2">Histoires</Typography>
+      <Typography variant="h2">Fusées</Typography>
       <Box
         sx={{
           display: 'flex',

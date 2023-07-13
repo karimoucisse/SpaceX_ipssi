@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f047d0a1-89a3-4840-be21-75e394e7eeef" name="Changes" comment="use Husky">
+    <list default="true" id="f047d0a1-89a3-4840-be21-75e394e7eeef" name="Changes" comment="Add title">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Crews.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Crews.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/HistoriesList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/HistoriesList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/History/Article.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/History/Article.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Rockets.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Rockets.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -176,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689243824381</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Add title">
+      <option name="closed" value="true" />
+      <created>1689245695463</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1689245695463</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,6 +221,7 @@
     <MESSAGE value="Change favico" />
     <MESSAGE value="ADd ? befor map" />
     <MESSAGE value="use Husky" />
-    <option name="LAST_COMMIT_MESSAGE" value="use Husky" />
+    <MESSAGE value="Add title" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add title" />
   </component>
 </project>

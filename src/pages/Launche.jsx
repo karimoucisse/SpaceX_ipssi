@@ -17,7 +17,7 @@ const Launche = () => {
   };
 
   const getLatestLaunchInfos = async () => {
-    const data = await getLatestLaunchInfo();
+    const data = await getLatestLaunchInfo(id);
     setLaunchInfos(data);
   };
 
@@ -43,20 +43,20 @@ const Launche = () => {
       <CircularProgress size="100px" />
     </Box>;
   }
-  if (launchInfos.length === 0) {
-    <Box
-      sx={{
-        display: 'flex',
-        width: '100vw',
-        height: '100vh',
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#FAF9F8',
-      }}
-    >
-      <CircularProgress size="100px" />
-    </Box>;
-  }
+  // if (launchInfos.length === 0) {
+  //   <Box
+  //     sx={{
+  //       display: 'flex',
+  //       width: '100vw',
+  //       height: '100vh',
+  //       justifyContent: 'center',
+  //       alignItems: 'center',
+  //       backgroundColor: '#FAF9F8',
+  //     }}
+  //   >
+  //     <CircularProgress size="100px" />
+  //   </Box>;
+  // }
   return (
     <>
       <Details image={launche.links?.patch.large} title={launche.name}>

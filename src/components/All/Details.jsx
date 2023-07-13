@@ -5,7 +5,7 @@ import ImageSelector from './ImageSelector';
 
 const Image = styled.img`
   object-fit: cover;
-  max-height: 100vh;
+  max-height: 500px !important;
   border-radius: 5px;
 `;
 const Details = ({ image, title, link, children }) => {

@@ -91,7 +91,7 @@ const Home = () => {
         </Stack>
         <Box
           display="flex"
-          gap={4}
+          gap={2}
           flexWrap="wrap"
           justifyContent="center"
           mt={4}

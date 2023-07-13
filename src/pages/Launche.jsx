@@ -22,11 +22,8 @@ const Launche = () => {
   };
 
   useEffect(() => {
-    getLatestLaunchInfos();
-  }, []);
-
-  useEffect(() => {
     getData();
+    getLatestLaunchInfos();
   }, []);
 
   if (launche.length === 0) {
@@ -43,20 +40,6 @@ const Launche = () => {
       <CircularProgress size="100px" />
     </Box>;
   }
-  // if (launchInfos.length === 0) {
-  //   <Box
-  //     sx={{
-  //       display: 'flex',
-  //       width: '100vw',
-  //       height: '100vh',
-  //       justifyContent: 'center',
-  //       alignItems: 'center',
-  //       backgroundColor: '#FAF9F8',
-  //     }}
-  //   >
-  //     <CircularProgress size="100px" />
-  //   </Box>;
-  // }
   return (
     <>
       <Details image={launche.links?.patch.large} title={launche.name}>
@@ -72,14 +55,50 @@ const Launche = () => {
               <Typography variant="body1" mb={2}>
                 Nationalités: {item.nationalities[0]}
               </Typography>
-              <Typography variant="body1" mb={2}>
-                Orbit: {item.orbit}
-              </Typography>
+              <Typography variant="body1">Orbit: {item.orbit}</Typography>
             </div>
           ))}
       </Details>
+      {launche && (
+        <>
+          <Box sx={{ px: '50px' }}>
+            {launchInfos?.crew?.length > 0 && (
+              <Typography variant="h5" mb={2} ml="50px">
+                Equipages
+              </Typography>
+            )}
+            <Box
+              sx={{
+                display: 'flex',
+
+                justifyContent: 'center',
+                gap: '40px',
+
+                flexWrap: 'wrap',
+              }}
+            >
+              {launchInfos?.crew?.map((data, i) => (
+                <People key={i} people={data.crew} role={data.role} />
+              ))}
+            </Box>
+          </Box>
+          <Box
+            sx={{
+              display: 'flex',
+              flexDirection: 'column',
+              px: '100px',
+              mt: '20px',
+            }}
+          >
+            <Typography variant="h5" mb={2}>
+              Rampe de lancement
+            </Typography>
+            <Launchpad launchpad={launchInfos?.launchpad} />
+          </Box>
+        </>
+      )}
       {launche?.links?.youtube_id && (
-        <Box display="flex" justifyContent="center" width="100%" my="100px">
+        <Box display="flex" justifyContent="center" width="100%" my="50px">
           <iframe
             width="960"
             height="615"
@@ -88,41 +107,6 @@ const Launche = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           ></iframe>
         </Box>
-      )}
-      {launche && (
-        <>
-          <Box
-            sx={{
-              display: 'flex',
-              px: '50px',
-              justifyContent: 'center',
-              gap: '20px',
-              mt: '40px',
-              flexWrap: 'wrap',
-              marginTop: '40px',
-            }}
-          >
-            {launchInfos?.crew?.map((data, i) => (
-              <People key={i} people={data.crew} role={data.role} />
-            ))}
-          </Box>
-          <Box
-            sx={{
-              display: 'flex',
-              flexDirection: 'column',
-              px: '100px',
-              alignItems: 'center',
-              gap: '40px',
-              mt: '40px',
-              flexWrap: 'wrap',
-            }}
-          >
-            <Typography variant="h5">Rampes de lancement</Typography>
-            {launchInfos?.launchpad?.map((data, i) => (
-              <Launchpad key={i} launchpad={data} />
-            ))}
-          </Box>
-        </>
       )}
     </>
   );

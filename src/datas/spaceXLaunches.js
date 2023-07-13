@@ -49,11 +49,9 @@ export const getLaunchByID = async (id) => {
       }),
     );
     launchInfo.payloads = payloadInfo.map((x) => x.data);
-    launchInfo.launchpad = (
-      await axios.get(
-        `https://api.spacexdata.com/v4/launchpads/${launchInfo.launchpad}`,
-      )
-    ).data;
+    launchInfo.launchpad = await axios.get(
+      `https://api.spacexdata.com/v4/launchpads/${data.launchpad}`,
+    );
     return launchInfo;
   } catch (e) {
     console.error(e);

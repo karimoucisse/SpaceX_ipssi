@@ -45,22 +45,8 @@ const Launche = () => {
       <CircularProgress size="100px" />
     </Box>;
   }
-  // if (launchInfos.length === 0) {
-  //   <Box
-  //     sx={{
-  //       display: 'flex',
-  //       width: '100vw',
-  //       height: '100vh',
-  //       justifyContent: 'center',
-  //       alignItems: 'center',
-  //       backgroundColor: '#FAF9F8',
-  //     }}
-  //   >
-  //     <CircularProgress size="100px" />
-  //   </Box>;
-  // }
   return (
-    <>
+    <Box sx={{ boxSizing: 'border-box' }}>
       <Details image={launche.links?.patch.large} title={launche.name}>
         {launche &&
           launchInfos?.payloads?.map((item, i) => (
@@ -85,7 +71,7 @@ const Launche = () => {
           display="flex"
           justifyContent="center"
           width="100%"
-          sx={{ margin: '40px' }}
+          sx={{ margin: '40px 0' }}
         >
           <iframe
             width="960"
@@ -120,19 +106,18 @@ const Launche = () => {
               flexDirection: 'column',
               px: '100px',
               alignItems: 'center',
-              gap: '40px',
               mt: '40px',
               flexWrap: 'wrap',
             }}
           >
-            <Typography variant="h5">rampe de lancement</Typography>
+            <Typography variant="h5" mb={1}>Rampes de lancement</Typography>
             {launchInfos?.launchpad?.map((data, i) => (
               <Launchpad key={i} launchpad={data} />
             ))}
           </Box>
         </>
       )}
-    </>
+    </Box>
   );
 };
 

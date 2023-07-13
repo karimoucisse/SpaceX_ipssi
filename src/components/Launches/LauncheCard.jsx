@@ -4,6 +4,7 @@ import {
   CardActionArea,
   CardContent,
   CardMedia,
+  CircularProgress,
   Link,
   Stack,
   Typography,
@@ -35,13 +36,28 @@ const LauncheCard = ({ launche }) => {
     >
       <Link href={`/launche/${launche.id}`} color="inherit">
         <CardActionArea>
-          <CardMedia
-            component="img"
-            height="300"
-            width="200"
-            image={launche.links?.patch.small}
-            alt={launche.name}
-          />
+          {launche.links?.patch.small ? (
+            <CardMedia
+              component="img"
+              height="300"
+              width="C"
+              image={launche.links?.patch.small}
+              alt={launche.name}
+            />
+          ) : (
+            <Box
+              sx={{
+                display: 'flex',
+                width: '200',
+                height: '400',
+                justifyContent: 'center',
+                alignItems: 'center',
+                backgroundColor: '#FAF9F8',
+              }}
+            >
+              <CircularProgress size="100px" />
+            </Box>
+          )}
           <CardContent
             sx={{
               backgroundColor: '#1c2930',

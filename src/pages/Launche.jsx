@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import Details from '../components/Details';
+import Details from '../components/All/Details';
 import People from '../components/Crew/People';
 import LauncheCard from '../components/Launches/LauncheCard';
 import { useEffect, useState } from 'react';

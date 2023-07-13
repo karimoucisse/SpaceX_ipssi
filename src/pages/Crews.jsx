@@ -2,13 +2,16 @@ import { Box, CircularProgress, Pagination, Typography } from '@mui/material';
 import People from '../components/Crew/People';
 import { useEffect, useState } from 'react';
 import { getCrews } from '../datas/spaceXCrew';
-import SearchBar from '../components/SearchBar';
+import SearchBar from '../components/All/SearchBar';
+import { getCrew } from '../datas/spaceXCrew';
 
 const Crew = () => {
   const [peoples, setPeoples] = useState([]);
   const [value, setValue] = useState([]);
+  const [showValue, setShowValue] = useState([]);
   const [page, setPage] = useState(1);
   const [searchBarValue, setSearchBarValue] = useState('');
+  const firstIndex = (page - 1) * 8;
   const handleChange = (e, value) => {
     setPage(value);
   };
@@ -24,23 +27,30 @@ const Crew = () => {
     getData();
   }, []);
 
-  useEffect(() => {
-    getData();
-  }, [page]);
+  // useEffect(() => {
+  //   getData();
+  // }, [page]);
 
   useEffect(() => {
-    if (searchBarValue) {
-      const newData = value.filter((element) =>
-        element.name.toLowerCase().includes(searchBarValue.toLowerCase()),
-      );
-      const firstIndex = (page - 1) * 8;
-      if (newData.length > 8) {
-        setPeoples(newData.slice(0, 8));
-      } else {
-        setPeoples(newData);
-      }
-    }
-  }, [searchBarValue]);
+    //   if (searchBarValue) {
+    //     const newData = value.filter((element) =>
+    //       element.name.toLowerCase().includes(searchBarValue.toLowerCase()),
+    //     );
+    //     const firstIndex = (page - 1) * 8;
+    //     if (newData.length > 8) {
+    //       setPeoples(newData.slice(0, 8));
+    //     } else {
+    //       setPeoples(newData);
+    //     }
+    //   }
+    // }, [searchBarValue]);
+    setPage(1);
+    setShowValue(
+      value.filter((x) =>
+        x.name.toLowerCase().includes(searchBarValue.toLowerCase()),
+      ),
+    );
+  }, [searchBarValue, value]);
 
   if (peoples.length === 0 && searchBarValue.length === 0) {
     <Box
@@ -70,7 +80,7 @@ const Crew = () => {
           alignItems="center"
         >
           <Typography variant="h5">
-            La personne que vous cherchez n'existe pas.
+            La personne que vous chercher n'est pas trouvable
           </Typography>
         </Box>
       ) : (
@@ -86,13 +96,13 @@ const Crew = () => {
               backgroundColor: '#FAF9F8',
             }}
           >
-            {peoples.map((people, i) => (
+            {showValue.slice(firstIndex, firstIndex + 8).map((people, i) => (
               <People key={i} people={people} />
             ))}
           </Box>
           <Box display="flex" width="100%" justifyContent="center">
             <Pagination
-              count={Math.round(value.length / 8)}
+              count={Math.round(showValue.length / 8)}
               color="primary"
               shape="rounded"
               page={page}

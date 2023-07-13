@@ -19,12 +19,20 @@ function Header() {
       link: 'rockets',
     },
     {
+      text: 'Roadster',
+      link: 'roadster',
+    },
+    {
       text: 'Informations',
       link: 'informations',
     },
     {
       text: 'Lancement',
       link: 'launches',
+    },
+    {
+      text: 'Quizz',
+      link: 'quizz',
     },
   ];
   return (

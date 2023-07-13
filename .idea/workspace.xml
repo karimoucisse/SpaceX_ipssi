@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f047d0a1-89a3-4840-be21-75e394e7eeef" name="Changes" comment="Merge">
-      <change afterPath="$PROJECT_DIR$/src/datas/spaceXRocket.js" afterDir="false" />
+    <list default="true" id="f047d0a1-89a3-4840-be21-75e394e7eeef" name="Changes" comment="Change favico">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Rocket/Rocket.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Rocket/Rocket.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/All/SearchBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/All/SearchBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Crew/People.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Crew/People.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Quizz/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Quizz/Main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Crew.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Crew.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Crews.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Crews.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Quizz.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Quizz.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Rocket.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Rocket.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,10 +45,15 @@
     "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/GitLib/Ipssi/React/SpaceX_ipssi/src/datas",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\GitLib\\Ipssi\\React\\SpaceX_ipssi\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.1.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -51,8 +61,22 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\GitLib\Ipssi\React\SpaceX_ipssi\src\datas" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\GitLib\Ipssi\React\SpaceX_ipssi\src\components\All" />
+      <recent name="C:\GitLib\Ipssi\React\SpaceX_ipssi\src\components\Rocket" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.start">
+    <configuration name="pre-commit" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="pre-commit" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -63,8 +87,16 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.pre-commit" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f047d0a1-89a3-4840-be21-75e394e7eeef" name="Changes" comment="" />
@@ -74,6 +106,7 @@
       <updated>1689081056092</updated>
       <workItem from="1689081061720" duration="2846000" />
       <workItem from="1689083986948" duration="2979000" />
+      <workItem from="1689176371554" duration="7002000" />
     </task>
     <task id="LOCAL-00001" summary="add new File For list people">
       <option name="closed" value="true" />
@@ -91,7 +124,55 @@
       <option name="project" value="LOCAL" />
       <updated>1689085095711</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add quizz.json">
+      <option name="closed" value="true" />
+      <created>1689158878313</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1689158878313</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Merge">
+      <option name="closed" value="true" />
+      <created>1689168067477</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689168067477</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add quizz selection">
+      <option name="closed" value="true" />
+      <created>1689170061521</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1689170061521</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add quizz selection">
+      <option name="closed" value="true" />
+      <created>1689174979344</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1689174979344</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add info page">
+      <option name="closed" value="true" />
+      <created>1689176720805</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1689176720805</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Change favico">
+      <option name="closed" value="true" />
+      <created>1689236943256</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1689236943256</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,7 +191,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add new File For list people" />
+    <MESSAGE value="Add quizz.json" />
     <MESSAGE value="Merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge" />
+    <MESSAGE value="Add quizz selection" />
+    <MESSAGE value="Add info page" />
+    <MESSAGE value="Change favico" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change favico" />
   </component>
 </project>

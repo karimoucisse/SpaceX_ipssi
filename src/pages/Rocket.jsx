@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getRocket } from '../datas/spaceXRocket';
 import { Box, CircularProgress, Stack, Typography } from '@mui/material';
-import Details from '../components/Details';
+import Details from '../components/All/Details';
 import { useParams } from 'react-router-dom';
 
 const Rocket = () => {
@@ -16,7 +16,6 @@ const Rocket = () => {
   useEffect(() => {
     getData();
   }, []);
-  console.log(rocket);
 
   if (rocket.length === 0) {
     <Box
@@ -48,7 +47,10 @@ const Rocket = () => {
           Height: {rocket.height?.meters}m
         </Typography>
         <Typography variant="body2">
-          Width: {rocket.diameter?.meters}m
+          Height: {rocket.height?.meters}m
+        </Typography>
+        <Typography variant="body2">
+          Diameter: {rocket.diameter?.meters}m
         </Typography>
         <Typography variant="body2">Mass: {rocket.mass?.kg}kg</Typography>
         <Typography variant="body2">Stages: {rocket.stages}</Typography>

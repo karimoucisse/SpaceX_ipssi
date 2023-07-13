@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Box, Button, Typography } from '@mui/material';
 import Response from './Response';
+import BarTimer from './BarTimer';
 
 /*
     question: {
@@ -23,7 +24,9 @@ const Main = ({ question, goNextQuestion }) => {
   let selectResponse = async (val) => {
     // Show Response
     if (Array.isArray(question.goodResponse)) {
-      setResponseSelected((x) => [...x, val]);
+      if (responseSelected.includes(val))
+        setResponseSelected((x) => x.filter((y) => x === y));
+      else setResponseSelected((x) => [...x, val]);
     } else {
       verifieResponse(val + 1);
     }
@@ -31,17 +34,14 @@ const Main = ({ question, goNextQuestion }) => {
   const goNext = () => {
     // Next step
     if (!isShowResponse) {
-      console.log(verifieResponse());
       // Verifier la bonne response
       // Montrer les responses
       setIsShowResponse(true);
     } else {
-      console.log(isCorrect);
       goNextQuestion(isCorrect ? timer : 0);
     }
   };
   const verifieResponse = (value) => {
-    console.log(responseSelected);
     clearInterval(timerRef);
     setIsShowResponse(true);
     if (
@@ -60,7 +60,6 @@ const Main = ({ question, goNextQuestion }) => {
     timeCalcul = defaultTime;
     clearInterval(timerRef);
     timerRef = setInterval(roundInterval, 1000);
-    console.log('resetQuestion');
   }, [question]);
 
   const roundInterval = () => {
@@ -73,10 +72,17 @@ const Main = ({ question, goNextQuestion }) => {
   };
 
   return (
-    <Box>
-      <p>{timer}</p>
-      <Typography>{question.question}</Typography>
-      <Box>
+    <Box
+      sx={{
+        padding: '0 50px',
+        textAlign: 'center',
+      }}
+    >
+      <BarTimer value={timer} maxValue={defaultTime} />
+      <Typography sx={{ my: 2 }} variant="h5">
+        {question.question}
+      </Typography>
+      <Box sx={{ display: 'flex', flexWrap: 'wrap', mb: 4 }}>
         {question.response.map((x, i) => (
           <Response
             key={i}
@@ -88,12 +94,14 @@ const Main = ({ question, goNextQuestion }) => {
                 (Array.isArray(question.goodResponse) &&
                   question.goodResponse.includes(i)))
             }
-            isSelected={responseSelected.includes(i)}
+            isSelected={!isShowResponse && responseSelected.includes(i)}
           />
         ))}
       </Box>
       {(Array.isArray(question.goodResponse) || isShowResponse) && (
-        <Button onClick={goNext}>Next</Button>
+        <Button variant="contained" onClick={goNext}>
+          {isShowResponse ? 'Next question' : 'Valid responses'}
+        </Button>
       )}
     </Box>
   );

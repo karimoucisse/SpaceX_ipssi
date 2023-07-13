@@ -5,12 +5,31 @@ const Response = ({ value, selected, isGoodResponse, isSelected }) => {
   // surbrillance si isGoodResponse
   return (
     <Box
-      onClick={selected}
       sx={{
-        backgroundColor: isGoodResponse ? 'green' : isSelected ? 'blue' : '',
+        width: '50%',
+        textAlign: 'center',
+        display: 'flex',
+        justifyContent: 'center',
+        margin: '5px 0',
       }}
     >
-      <Typography>{value}</Typography>
+      <Box
+        sx={{
+          backgroundColor: isGoodResponse
+            ? 'green'
+            : isSelected
+            ? '#6c84ff'
+            : '',
+          color: isGoodResponse ? 'white' : 'black',
+          border: '1px solid #797979FF',
+          borderRadius: '5px',
+          padding: '5px',
+          cursor: 'pointer',
+        }}
+        onClick={selected}
+      >
+        <Typography>{value}</Typography>
+      </Box>
     </Box>
   );
 };

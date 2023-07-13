@@ -67,9 +67,20 @@ const Crew = () => {
     </Box>;
   }
   return (
-    <Box>
-      <Box px="100px" pt="50px">
-        <SearchBar placeHolder="Recherche ..." setValue={setSearchBarValue} />
+    <Box sx={{ mx: 16 }}>
+      <Box
+        sx={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'end',
+        }}
+      >
+        <Typography sx={{ pt: 8 }} variant="h2">
+          Équipage
+        </Typography>
+        <Box>
+          <SearchBar placeHolder="Recherche ..." setValue={setSearchBarValue} />
+        </Box>
       </Box>
       {peoples.length === 0 && searchBarValue.length > 0 ? (
         <Box
@@ -92,7 +103,7 @@ const Crew = () => {
               justifyContent: 'center',
               alignItems: 'center',
               gap: '40px',
-              padding: '50px 50px 0 50px',
+              pt: 10,
               backgroundColor: '#FAF9F8',
             }}
           >

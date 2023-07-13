@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { getHistories } from '../datas/spaceXHistory';
 import Article from '../components/History/Article';
-import { Box, CircularProgress } from '@mui/material';
+import { Box, CircularProgress, Typography } from '@mui/material';
+
 const HistoriesList = () => {
   const [histories, setHistories] = useState([]);
 
@@ -30,18 +31,25 @@ const HistoriesList = () => {
   return (
     <Box
       sx={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        flexWrap: 'wrap',
         backgroundColor: '#FAF9F8',
-        gap: '20px',
         padding: '40px 100px',
       }}
     >
-      {histories.map((article, i) => (
-        <Article key={i} article={article} />
-      ))}
+      <Typography variant="h2">Histoires</Typography>
+      <Box
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          flexWrap: 'wrap',
+          gap: '20px',
+          mt: 8,
+        }}
+      >
+        {histories.map((article, i) => (
+          <Article key={i} article={article} />
+        ))}
+      </Box>
     </Box>
   );
 };

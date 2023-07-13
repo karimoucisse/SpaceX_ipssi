@@ -1,7 +1,8 @@
-import { Box, CircularProgress } from '@mui/material';
+import { Box, CircularProgress, Typography } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 import { getRockets } from '../datas/spaceXRocket';
 import Rocket from '../components/Rocket/Rocket';
+
 const Rockets = () => {
   const [rockets, setRockets] = useState([]);
 
@@ -29,20 +30,22 @@ const Rockets = () => {
     </Box>;
   }
   return (
-    <Box
-      sx={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        flexWrap: 'wrap',
-        backgroundColor: '#FAF9F8',
-        gap: '40px',
-        padding: '50px',
-      }}
-    >
-      {rockets.map((rocket, i) => (
-        <Rocket key={i} rocket={rocket} />
-      ))}
+    <Box sx={{ padding: '50px', backgroundColor: '#FAF9F8' }}>
+      <Typography variant="h2">Histoires</Typography>
+      <Box
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          flexWrap: 'wrap',
+          gap: '40px',
+          mt: 8,
+        }}
+      >
+        {rockets.map((rocket, i) => (
+          <Rocket key={i} rocket={rocket} />
+        ))}
+      </Box>
     </Box>
   );
 };

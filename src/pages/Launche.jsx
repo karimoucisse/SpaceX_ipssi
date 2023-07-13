@@ -17,7 +17,7 @@ const Launche = () => {
   };
   const getCrewData = async () => {
     const crewArray = [];
-    launche?.crew.forEach(async (item) => {
+    launche?.crew?.forEach(async (item) => {
       let data = await getCrew(item.crew);
       data = [data, { role: item.role }];
       crewArray.push([data, { role: item.role }]);

@@ -14,6 +14,10 @@ const Crew = () => {
   const firstIndex = (page - 1) * 8;
   const handleChange = (e, value) => {
     setPage(value);
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
   };
 
   const getData = async () => {
@@ -27,23 +31,7 @@ const Crew = () => {
     getData();
   }, []);
 
-  // useEffect(() => {
-  //   getData();
-  // }, [page]);
-
   useEffect(() => {
-    //   if (searchBarValue) {
-    //     const newData = value.filter((element) =>
-    //       element.name.toLowerCase().includes(searchBarValue.toLowerCase()),
-    //     );
-    //     const firstIndex = (page - 1) * 8;
-    //     if (newData.length > 8) {
-    //       setPeoples(newData.slice(0, 8));
-    //     } else {
-    //       setPeoples(newData);
-    //     }
-    //   }
-    // }, [searchBarValue]);
     setPage(1);
     setShowValue(
       value.filter((x) =>

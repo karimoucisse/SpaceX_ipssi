@@ -79,12 +79,7 @@ const Launche = () => {
           ))}
       </Details>
       {launche?.links?.youtube_id && (
-        <Box
-          display="flex"
-          justifyContent="center"
-          width="100%"
-          sx={{ margin: '40px' }}
-        >
+        <Box display="flex" justifyContent="center" width="100%" my="100px">
           <iframe
             width="960"
             height="615"
@@ -101,16 +96,16 @@ const Launche = () => {
               display: 'flex',
               px: '50px',
               justifyContent: 'center',
-              gap: '40px',
+              gap: '20px',
               mt: '40px',
               flexWrap: 'wrap',
+              marginTop: '40px',
             }}
           >
             {launchInfos?.crew?.map((data, i) => (
               <People key={i} people={data.crew} role={data.role} />
             ))}
           </Box>
-          <Typography variant="h5">rampe de lancement</Typography>
           <Box
             sx={{
               display: 'flex',
@@ -122,6 +117,7 @@ const Launche = () => {
               flexWrap: 'wrap',
             }}
           >
+            <Typography variant="h5">Rampes de lancement</Typography>
             {launchInfos?.launchpad?.map((data, i) => (
               <Launchpad key={i} launchpad={data} />
             ))}

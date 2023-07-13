@@ -60,7 +60,8 @@ function Header() {
           <Link href={`/${item.link}`} color="inherit" key={i}>
             <Typography
               color={
-                currentLocation.includes(item.link) && item.link.length > 1
+                (currentLocation.includes(item.link) && item.link.length > 1) ||
+                (currentLocation === '/' && item.text === 'Accueil')
                   ? 'lightgray'
                   : 'white'
               }

@@ -14,7 +14,12 @@ const SearchBar = ({ setValue, placeHolder }) => {
           <Search />
         </InputAdornment>
       }
-      sx={{ width: '400px' }}
+      sx={{
+        width: '400px',
+        backgroundColor: '#D3D3D3',
+        padding: '10px 20px',
+        fontSize: '20px',
+      }}
       variant="standard"
     />
   );

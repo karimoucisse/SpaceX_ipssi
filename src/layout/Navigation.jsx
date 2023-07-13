@@ -4,7 +4,7 @@ import { Box } from '@mui/material';
 
 const Navigation = ({ children }) => {
   return (
-    <Box sx={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+    <Box sx={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', pb: 4}}>
       <Header />
       <Box sx={{ flex: 1 }}>{children}</Box>
     </Box>

@@ -18,7 +18,6 @@ const Launchpad = ({ launchpad }) => {
         borderRadius: '10px',
       }}
     >
-      {/* <Link href={`/`} color="inherit"> */}
       <CardActionArea>
         <CardMedia
           component="img"
@@ -79,7 +78,6 @@ const Launchpad = ({ launchpad }) => {
           </Typography>
         </CardContent>
       </CardActionArea>
-      {/* </Link> */}
     </Card>
   );
 };

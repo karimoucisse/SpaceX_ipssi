@@ -3,7 +3,7 @@ import Details from '../components/All/Details';
 import People from '../components/Crew/People';
 import { useEffect, useState } from 'react';
 import { Box, CircularProgress, Typography } from '@mui/material';
-import { getLatestLaunchInfo, getLaunche } from '../datas/spaceXLaunches';
+import { getLaunchByID, getLaunche } from '../datas/spaceXLaunches';
 import Launchpad from '../components/Launches/Launchpad';
 
 const Launche = () => {
@@ -17,7 +17,7 @@ const Launche = () => {
   };
 
   const getLatestLaunchInfos = async () => {
-    const data = await getLatestLaunchInfo(id);
+    const data = await getLaunchByID(id);
     setLaunchInfos(data);
   };
 

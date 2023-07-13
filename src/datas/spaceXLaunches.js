@@ -23,12 +23,11 @@ export const getLaunche = async (id) => {
   }
 };
 
-export const getLatestLaunchInfo = async () => {
+export const getLatestLaunchInfo = async (id) => {
   try {
     let launchInfo = { crew: [], capsules: [], payloads: [], launchpad: [] };
-    let data = (
-      await axios.get('https://api.spacexdata.com/v5/launches/latest')
-    ).data;
+    let data = (await axios.get(`https://api.spacexdata.com/v5/launches/${id}`))
+      .data;
     const crewInfo = await Promise.all(
       data.crew.map(async (x) => {
         return axios.get(`https://api.spacexdata.com/v4/crew/${x.crew}`);

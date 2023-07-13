@@ -19,7 +19,7 @@ const Launche = () => {
   };
 
   const getLatestLaunchInfos = async () => {
-    const data = await getLatestLaunchInfo();
+    const data = await getLatestLaunchInfo(id);
     setLaunchInfos(data);
   };
 
@@ -45,25 +45,25 @@ const Launche = () => {
       <CircularProgress size="100px" />
     </Box>;
   }
-  if (launchInfos.length === 0) {
-    <Box
-      sx={{
-        display: 'flex',
-        width: '100vw',
-        height: '100vh',
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#FAF9F8',
-      }}
-    >
-      <CircularProgress size="100px" />
-    </Box>;
-  }
+  // if (launchInfos.length === 0) {
+  //   <Box
+  //     sx={{
+  //       display: 'flex',
+  //       width: '100vw',
+  //       height: '100vh',
+  //       justifyContent: 'center',
+  //       alignItems: 'center',
+  //       backgroundColor: '#FAF9F8',
+  //     }}
+  //   >
+  //     <CircularProgress size="100px" />
+  //   </Box>;
+  // }
   return (
     <>
       <Details image={launche.links?.patch.large} title={launche.name}>
         {launche &&
-          launchInfos.payloads.map((item, i) => (
+          launchInfos?.payloads?.map((item, i) => (
             <>
               <Typography variant="body1" mb={2}>
                 Clients: {item.customers[0]}
@@ -80,7 +80,7 @@ const Launche = () => {
             </>
           ))}
       </Details>
-      {launche.links.youtube_id && (
+      {launche?.links?.youtube_id && (
         <Box
           display="flex"
           justifyContent="center"
@@ -114,7 +114,6 @@ const Launche = () => {
               <People key={i} people={data.crew} role={data.role} />
             ))}
           </Box>
-          <Typography variant="h5">rampe de lancement</Typography>
           <Box
             sx={{
               display: 'flex',
@@ -126,6 +125,7 @@ const Launche = () => {
               flexWrap: 'wrap',
             }}
           >
+            <Typography variant="h5">rampe de lancement</Typography>
             {launchInfos?.launchpad?.map((data, i) => (
               <Launchpad key={i} launchpad={data} />
             ))}

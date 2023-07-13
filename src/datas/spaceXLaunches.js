@@ -23,7 +23,7 @@ export const getLaunche = async (id) => {
   }
 };
 
-export const getLatestLaunchInfo = async (id) => {
+export const getLaunchByID = async (id) => {
   try {
     let launchInfo = { crew: [], capsules: [], payloads: [], launchpad: [] };
     let data = (await axios.get(`https://api.spacexdata.com/v5/launches/${id}`))

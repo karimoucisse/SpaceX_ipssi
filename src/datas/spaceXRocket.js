@@ -8,7 +8,8 @@ export const getRockets = async () => {
 };
 export const getRocket = async (id) => {
   try {
-    return (await axios.get(`https://api.spacexdata.com/v4/rockets/${id}`)).data;
+    return (await axios.get(`https://api.spacexdata.com/v4/rockets/${id}`))
+      .data;
   } catch (error) {
     console.error(error);
   }
